@@ -16,15 +16,15 @@ Being a data scientist means he/she should be capable of dealing with massive da
 
 What differences/similarities do you see between data scientists and statisticians?
 
-Statisticians are supposed to clarify theoretical problems and provide guidence to people when they are trying to design an experiment or explore the data.
+They are both supposed to have a certain level of knowledge about statistics and software engineering. Statisticians are better at theoratical fields, clarifying theoretical problems and providing guidence to people when they are trying to design an experiment or explore the data.
 They should have solid theoretical knowledge background in statistics compared to data scientists.
-However, when dealing with massive amount of data,  data scientists will have more experience and skills on the data science process to present the results nice and fast.
+However, when dealing with massive amount of data,  data scientists will have more experience and skills in software engineering to present the results nice and fast.
 The means of collecting data is different: data scientists would collect massive amount of data and spend time on cleansing, transforming, etc;
 while statisticians would rely on more traditional and small-scaled methods.
 The modling process is different: data scientists would possibly rely on mechine learning and choose the best model, while statisticians often consider checking assumptions and improving a single model.
 
 How do you view yourself in relation to these two areas?
 
-I think both statisticians and data scientists have their own strength and weakness, I'm glad that NCSU's statistics department has plenty of different courses that help students improve our skills in both fields.
+I think both statisticians and data scientists have their own strength and weakness, I'm glad that NCSU's statistics department has plenty of different courses that help students to improve our skills in both fields.
 I won't say I'm good at statistics or data science because there are so much to learn and I'm just a grad student, but at least I learned basic knowledge of statistics and data science in NCSU,
 I'm more interested in solving real problems so I'll focus on learning more about data science in the future.
