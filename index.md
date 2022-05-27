@@ -11,4 +11,4 @@ This is me.
 
 ![img](photo2.png)
 
-My email is _cou2@ncsu.edu_
+My email is _czou2@ncsu.edu_
