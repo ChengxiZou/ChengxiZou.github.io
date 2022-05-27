@@ -7,6 +7,8 @@ I'm a grad student in **NCSU**.
   + _My thoughts about statistics_
   + _Some pictures_
 
-![img](/C:/Users/Scopio/Desktop/photo.jpg)
+This is me.
+
+![img](photo2.png)
 
 My email is _cou2@ncsu.edu_
