@@ -7,8 +7,6 @@ I'm a grad student in **NCSU**.
   + _My thoughts about statistics_
   + _Some pictures_
 
-```{r graphics, out.width="800px", echo = TRUE}
-knitr::include_graphics("C:\Users\Scopio\Desktop\photo.jpg")
-```
+![img](/C:/Users/Scopio/Desktop/photo.jpg)
 
 My email is _cou2@ncsu.edu_
