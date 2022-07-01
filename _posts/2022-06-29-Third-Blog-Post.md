@@ -24,7 +24,7 @@ geom_boxplot(aes(color = Species)) +
 ggtitle("Box Plot Example")
 ```
 
-![](../images/plotexample-1.png)<!-- -->
+![](../images/p1-1.png)<!-- -->
 
 ``` r
 ggplot(iris, aes(x = Sepal.Length)) +
@@ -32,7 +32,7 @@ geom_histogram(aes(fill = Species), position = "dodge") +
 ggtitle("Histogram Example")
 ```
 
-![](../images/plotexample2-1.png)<!-- -->
+![](../images/p2-1.png)<!-- -->
 
 ``` r
 ggplot(iris, aes(x = Sepal.Length, Petal.Length)) +
@@ -40,7 +40,7 @@ geom_point(aes(color = Species)) +
 ggtitle("Scatter Plot Example")
 ```
 
-![](../images/plotexample3-1.png)<!-- -->
+![](../images/p3-1.png)<!-- -->
 
 run render function in the console:
 
