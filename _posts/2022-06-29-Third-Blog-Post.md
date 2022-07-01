@@ -24,7 +24,7 @@ geom_boxplot(aes(color = Species)) +
 ggtitle("Box Plot Example")
 ```
 
-![](D:\5th%20semester\ST558\Rrepo\ChengxiZou.github.io_posts\2022-06-29-Third-Blog-Post_files/figure-gfm/p1-1.png)<!-- -->
+![](ChengxiZou.github.io/_posts/2022-06-29-Third-Blog-Post_files/figure-gfm/p1-1.png)<!-- -->
 
 ``` r
 ggplot(iris, aes(x = Sepal.Length)) +
@@ -32,7 +32,7 @@ geom_histogram(aes(fill = Species), position = "dodge") +
 ggtitle("Histogram Example")
 ```
 
-![](D:\5th%20semester\ST558\Rrepo\ChengxiZou.github.io_posts\2022-06-29-Third-Blog-Post_files/figure-gfm/p2-1.png)<!-- -->
+![](ChengxiZou.github.io/_posts/2022-06-29-Third-Blog-Post_files/figure-gfm/p2-1.png)<!-- -->
 
 ``` r
 ggplot(iris, aes(x = Sepal.Length, Petal.Length)) +
@@ -40,7 +40,7 @@ geom_point(aes(color = Species)) +
 ggtitle("Scatter Plot Example")
 ```
 
-![](D:\5th%20semester\ST558\Rrepo\ChengxiZou.github.io_posts\2022-06-29-Third-Blog-Post_files/figure-gfm/p3-1.png)<!-- -->
+![](ChengxiZou.github.io/_posts/2022-06-29-Third-Blog-Post_files/figure-gfm/p3-1.png)<!-- -->
 
 run render function in the console:
 
