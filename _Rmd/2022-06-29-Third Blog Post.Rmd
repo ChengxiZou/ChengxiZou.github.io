@@ -15,11 +15,10 @@ knitr::opts_chunk$set(fig.path = "../images/")
 
 I really like ggplot2 package. The base packages in R produces some graphs that are't very fancy, but using the ggplot2 package we can generate some beautiful graphs and it's easy to understand its syntax of "layers".
 
-
 ```{r plotexample, echo=TRUE, message=FALSE, warning=FALSE}
 library(rmarkdown)
 library(ggplot2)
-iris
+
 ggplot(iris, aes(x = Sepal.Length, Petal.Length)) +
 geom_boxplot(aes(color = Species)) +
 ggtitle("Box Plot Example")
