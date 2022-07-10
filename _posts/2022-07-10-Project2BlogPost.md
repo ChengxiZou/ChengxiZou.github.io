@@ -3,8 +3,7 @@ ST558 Project2 Blog
 Chengxi Zou
 2022-07-10
 
-link to github page:
-<https://github.com/ShanLLL52.github.io/ST558Project2>
+link to github page: <https://shanlll52.github.io/ST558Project2/>
 
 link to github repo: <https://github.com/ShanLLL52/ST558Project2>
 

@@ -9,7 +9,7 @@ output: github_document
 knitr::opts_chunk$set(echo = FALSE, eval = TRUE, message = FALSE, warning = FALSE)
 ```
 
-link to github page: https://github.com/ShanLLL52.github.io/ST558Project2
+link to github page: https://shanlll52.github.io/ST558Project2/
 
 link to github repo: https://github.com/ShanLLL52/ST558Project2
 
