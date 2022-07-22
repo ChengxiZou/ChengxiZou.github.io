@@ -1,0 +1,46 @@
+---
+title: "ST558 RandomForestBlogPost"
+author: "Chengxi Zou"
+date: '2022-07-10'
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, eval = TRUE, message = FALSE, warning = FALSE)
+```
+
+
+# What method did you find most interesting?  Write a little about the method, fit the model on some data, and provide any relevant output.
+
+I think the random forest method is very inspiring.
+
+Generally, the random forest method is better than bagging. If we care mostly about prediction rather than interpretation, we could average across many fitted trees, decreases variance over an individual tree fit. We could create multiple trees and average results. The difference is that we don't use all predictors, we use a random subset of predictors for each fit.
+
+```{r, message=FALSE, warning=FALSE, cache=TRUE}
+library(rmarkdown)
+library(randomForest)
+library(ggplot2)
+library(dplyr)
+head(diamonds)
+
+# train and test row index
+set.seed(1)
+train <- sample(1:nrow(diamonds), size = 0.8*nrow(diamonds))
+test <- setdiff(1:nrow(diamonds), train)
+
+# train and test sets
+diamondsTrain <- diamonds[train,]
+diamondsTest <- diamonds[test,]
+
+# fit model
+fit <- randomForest(price ~ ., data = diamondsTrain, mtry = ncol(diamondsTrain)/3, ntree = 200, importance = TRUE)
+pred <- predict(fit, newdata = select(diamondsTest, -price))
+
+fit
+
+# get RMSE
+rfRMSE <- sqrt(mean((pred-diamondsTest$price)^2))
+rfRMSE
+```
+
+
