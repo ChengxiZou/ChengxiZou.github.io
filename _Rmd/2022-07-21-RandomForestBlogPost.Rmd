@@ -16,7 +16,7 @@ I think the random forest method is very inspiring.
 
 Generally, the random forest method is better than bagging. If we care mostly about prediction rather than interpretation, we could average across many fitted trees, decreases variance over an individual tree fit. We could create multiple trees and average results. The difference is that we don't use all predictors, we use a random subset of predictors for each fit.
 
-```{r, message=FALSE, warning=FALSE, cache=TRUE}
+```{r, echo = TRUE, message=FALSE, warning=FALSE, cache=TRUE}
 library(rmarkdown)
 library(randomForest)
 library(ggplot2)

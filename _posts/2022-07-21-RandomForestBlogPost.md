@@ -14,6 +14,14 @@ fit. We could create multiple trees and average results. The difference
 is that we don’t use all predictors, we use a random subset of
 predictors for each fit.
 
+``` r
+library(rmarkdown)
+library(randomForest)
+library(ggplot2)
+library(dplyr)
+head(diamonds)
+```
+
     ## # A tibble: 6 × 10
     ##   carat cut       color clarity depth table price     x     y     z
     ##   <dbl> <ord>     <ord> <ord>   <dbl> <dbl> <int> <dbl> <dbl> <dbl>
@@ -24,6 +32,23 @@ predictors for each fit.
     ## 5  0.31 Good      J     SI2      63.3    58   335  4.34  4.35  2.75
     ## 6  0.24 Very Good J     VVS2     62.8    57   336  3.94  3.96  2.48
 
+``` r
+# train and test row index
+set.seed(1)
+train <- sample(1:nrow(diamonds), size = 0.8*nrow(diamonds))
+test <- setdiff(1:nrow(diamonds), train)
+
+# train and test sets
+diamondsTrain <- diamonds[train,]
+diamondsTest <- diamonds[test,]
+
+# fit model
+fit <- randomForest(price ~ ., data = diamondsTrain, mtry = ncol(diamondsTrain)/3, ntree = 200, importance = TRUE)
+pred <- predict(fit, newdata = select(diamondsTest, -price))
+
+fit
+```
+
     ## 
     ## Call:
     ##  randomForest(formula = price ~ ., data = diamondsTrain, mtry = ncol(diamondsTrain)/3,      ntree = 200, importance = TRUE) 
@@ -33,5 +58,11 @@ predictors for each fit.
     ## 
     ##           Mean of squared residuals: 299206.1
     ##                     % Var explained: 98.1
+
+``` r
+# get RMSE
+rfRMSE <- sqrt(mean((pred-diamondsTest$price)^2))
+rfRMSE
+```
 
     ## [1] 554.6379
