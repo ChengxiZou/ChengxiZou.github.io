@@ -1,0 +1,31 @@
+This is my 5th Blog!
+================
+Chengxi Zou
+2022-07-24
+
+# My thoughts on R
+
+## **what your current thoughts are in terms of using R for data science - do you think you’ll continue to use R going forward? Why or why not?**
+
+I think R is a great software to do analysis and output some results.
+However it’s not that convenient to download and call a lot of packages
+every time we do a new analysis. A easy way is to call as many packages
+as we know before writing the code, but that sounds stupid; otherwise we
+need to remember the packages and their functions.
+
+In spite of that, I do like R and I think it’s suitable for me, more
+than SAS did.
+
+## **what things are you going to do differently in practice now that you’ve had this course?**
+
+I’ll use R to do analysis and present my results. After having the
+course I’m pretty good at sitting for hours trying to make my code run,
+and I’ve gained a lot of relevant R knowledge.
+
+## **what areas of statistics/data science are you thinking about exploring further?**
+
+I’m interested in predictions, the methods like random forest I learned
+from the course is really interesting. I was thinking that sometimes
+statisticians care too much about “statistical significance”, what if we
+really are trying to predict something rather than figure out what’s
+important or not? Then these prediction methods answered my question.
